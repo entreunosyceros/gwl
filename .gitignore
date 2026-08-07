@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+
+# Local runtime data — API key, chats, PDF text and attachments live here
+data/*
+!data/.gitkeep
+
+# Secrets / credentials (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*credentials*.json
+secrets/
+
+# User PDFs and similar documents anywhere in the project
+*.pdf
+*.PDF

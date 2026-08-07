@@ -1,0 +1,327 @@
+/* Tema OSCURO — coherente de punta a punta */
+
+QMainWindow, QDialog {
+    background-color: #0b1220;
+    color: #e8eef7;
+    font-family: "IBM Plex Sans", "Segoe UI", "Ubuntu", "Noto Sans", sans-serif;
+    font-size: 13.5px;
+}
+
+QMenuBar {
+    background-color: #0b1220;
+    color: #e8eef7;
+    border-bottom: 1px solid #1a2438;
+    padding: 4px 8px;
+}
+
+QMenuBar::item {
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+QMenu {
+    background-color: #121a2a;
+    color: #e8eef7;
+    border: 1px solid #243247;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 8px 18px;
+    border-radius: 6px;
+}
+
+QMenu::item:selected {
+    background-color: #0f766e;
+}
+
+QToolBar {
+    background-color: #0f1624;
+    border-bottom: 1px solid #1a2438;
+    spacing: 8px;
+    padding: 8px 12px;
+    color: #e8eef7;
+}
+
+QToolBar QLabel {
+    color: #9db0c7;
+    font-weight: 600;
+}
+
+QToolButton, QPushButton {
+    background-color: #0f766e;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 16px;
+    font-weight: 650;
+    font-size: 13px;
+}
+
+QToolButton:hover, QPushButton:hover {
+    background-color: #0d9488;
+}
+
+QToolButton:pressed, QPushButton:pressed {
+    background-color: #115e59;
+}
+
+QPushButton:disabled {
+    background-color: #243247;
+    color: #64748b;
+}
+
+QPushButton#secondaryButton {
+    background-color: #1a2438;
+    color: #e8eef7;
+    border: 1px solid #2a3a52;
+}
+
+QPushButton#secondaryButton:hover {
+    background-color: #243247;
+    border: 1px solid #0f766e;
+}
+
+QPushButton#secondaryButton:disabled {
+    background-color: #121a2a;
+    color: #64748b;
+    border: 1px solid #1a2438;
+}
+
+QFrame#sidebar {
+    background-color: #0f1624;
+    border-right: 1px solid #1a2438;
+}
+
+QLabel#sidebarTitle {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7f93ad;
+    padding: 16px 16px 8px 16px;
+}
+
+QLabel#brandTitle {
+    font-size: 18px;
+    font-weight: 750;
+    color: #f8fafc;
+    padding: 18px 16px 4px 16px;
+    letter-spacing: -0.02em;
+}
+
+QLabel#brandLogo {
+    background: transparent;
+    border: none;
+}
+
+QLabel#brandSubtitle {
+    font-size: 12px;
+    color: #7f93ad;
+    padding: 0 16px 12px 16px;
+}
+
+QListWidget {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    color: #d7e0ec;
+}
+
+QListWidget::item {
+    padding: 12px 14px;
+    border-radius: 12px;
+    margin: 3px 4px;
+    color: #c5d2e3;
+}
+
+QListWidget::item:selected {
+    background-color: #0f766e;
+    color: #ffffff;
+}
+
+QListWidget::item:hover:!selected {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+QTextBrowser#chatView {
+    background-color: #0b1220;
+    border: none;
+    padding: 20px 28px;
+    color: #e8eef7;
+    selection-background-color: #0f766e;
+}
+
+QFrame#composerBar {
+    background-color: #0f1624;
+    border-top: 1px solid #1a2438;
+}
+
+QPlainTextEdit#composer {
+    background-color: #121a2a;
+    border: 1px solid #2a3a52;
+    border-radius: 16px;
+    padding: 14px 16px;
+    color: #e8eef7;
+    selection-background-color: #0f766e;
+    font-size: 14px;
+}
+
+QPlainTextEdit#composer:focus {
+    border: 1px solid #14b8a6;
+}
+
+QListWidget#attachmentList {
+    background-color: #121a2a;
+    border: 1px solid #2a3a52;
+    border-radius: 12px;
+    border-right: 1px solid #2a3a52;
+    padding: 4px;
+    max-height: 72px;
+    color: #e8eef7;
+}
+
+QListWidget#attachmentList::item {
+    padding: 6px 10px;
+    margin: 2px;
+    color: #e8eef7;
+    border-radius: 8px;
+    background-color: #1a2438;
+}
+
+QListWidget#attachmentList::item:hover {
+    background-color: #243247;
+}
+
+QLineEdit, QComboBox {
+    background-color: #121a2a;
+    border: 1px solid #2a3a52;
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: #e8eef7;
+    min-height: 22px;
+}
+
+QToolBar QComboBox {
+    min-width: 160px;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #14b8a6;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #121a2a;
+    color: #e8eef7;
+    selection-background-color: #0f766e;
+    border: 1px solid #2a3a52;
+    padding: 4px;
+}
+
+QLabel#statusLabel {
+    color: #7f93ad;
+    padding: 2px 4px 0 4px;
+    font-size: 12px;
+}
+
+QLabel#linkLabel {
+    color: #5eead4;
+}
+
+QDialog QLabel {
+    color: #e8eef7;
+}
+
+QLabel#dialogTitle {
+    font-size: 20px;
+    font-weight: 750;
+    color: #f8fafc;
+    letter-spacing: -0.02em;
+}
+
+QCheckBox {
+    color: #e8eef7;
+    spacing: 8px;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 4px 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: #2a3a52;
+    border-radius: 5px;
+    min-height: 28px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #3d516d;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QListWidget#docList {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid #243247;
+    border-right: 1px solid #243247;
+    border-radius: 12px;
+    margin: 0 10px;
+    padding: 4px;
+    outline: none;
+    color: #d7e0ec;
+}
+
+QListWidget#docList::item {
+    padding: 8px 10px;
+    margin: 2px;
+    color: #c5d2e3;
+    border-radius: 8px;
+}
+
+QListWidget#docList::item:selected {
+    background-color: #0f766e;
+    color: #ffffff;
+}
+
+QListWidget#docList::item:hover:!selected {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+QStatusBar {
+    background-color: #0f1624;
+    color: #7f93ad;
+    border-top: 1px solid #1a2438;
+    padding: 2px 8px;
+}
+
+QFrame#chatHeader {
+    background-color: #0f1624;
+    border-bottom: 1px solid #1a2438;
+}
+
+QLabel#chatHeaderTitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f8fafc;
+    padding: 14px 24px 2px 24px;
+}
+
+QLabel#chatHeaderSubtitle {
+    font-size: 12px;
+    color: #7f93ad;
+    padding: 0 24px 12px 24px;
+}
